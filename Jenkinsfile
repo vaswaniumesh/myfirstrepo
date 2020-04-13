@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'build.bat'
+        bat 'cd srishti-app npm install'
       }
     }
 
