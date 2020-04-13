@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Package') {
+      steps {
+        zip(dir: 'srishti-app\\dist', zipFile: 'srishti-app.zip')
+      }
+    }
+
   }
 }
